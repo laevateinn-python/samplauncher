@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="UI-cmm">
-    <file>UI_icons/mini.svg</file>
-    <file>UI_icons/x.svg</file>
-  </qresource>
-</RCC>
