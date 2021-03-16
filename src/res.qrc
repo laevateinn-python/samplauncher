@@ -1,5 +1,10 @@
 <RCC>
   <qresource prefix="ui">
+    <file>folder.png</file>
+    <file>arrow.png</file>
+    <file>back_settings.png</file>
+    <file>back_black.png</file>
+    <file>playpressed.png</file>
     <file>back_dialog.png</file>
     <file>play.png</file>
     <file>close.png</file>

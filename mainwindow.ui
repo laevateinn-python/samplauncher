@@ -37,13 +37,17 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Suvorovka launcher </string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="src/res.qrc">
+    <normaloff>:/ui/play.png</normaloff>:/ui/play.png</iconset>
   </property>
   <property name="autoFillBackground">
    <bool>false</bool>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/ui/back_colored.png);
+   <string notr="true">background-image: url(:/ui/back_black.png);
 </string>
   </property>
   <property name="locale">
@@ -147,12 +151,23 @@ width:40px;
          <enum>Qt::StrongFocus</enum>
         </property>
         <property name="styleSheet">
-         <string notr="true">background:rgba(255,255,255,10);
+         <string notr="true">QPushButton{
+background:rgba(255,255,255,0);
 color:white;
 margin-bottom:12px;
 margin-left:10px;
 margin-right:10px;
-</string>
+padding:3px;
+}
+QPushButton:hover{
+background-color: rgba(0, 255, 123, 100);
+
+border-radius: 4px;
+}
+QPushButton:pressed{
+border-radius: 4px;
+background-color:green;
+}</string>
         </property>
         <property name="text">
          <string>Сайт</string>
@@ -177,12 +192,23 @@ margin-right:10px;
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">background:rgba(255,255,255,10);
+         <string notr="true">QPushButton{
+background:rgba(255,255,255,0);
 color:white;
 margin-bottom:12px;
 margin-left:10px;
 margin-right:10px;
-</string>
+padding:3px;
+}
+QPushButton:hover{
+background-color: rgba(0, 255, 123, 100);
+
+border-radius: 4px;
+}
+QPushButton:pressed{
+border-radius: 4px;
+background-color:green;
+}</string>
         </property>
         <property name="text">
          <string>Форум</string>
@@ -201,12 +227,23 @@ margin-right:10px;
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">color:white;
-background:rgba(255,255,255,10);
+         <string notr="true">QPushButton{
+background:rgba(255,255,255,0);
+color:white;
 margin-bottom:12px;
 margin-left:10px;
 margin-right:10px;
-</string>
+padding:3px;
+}
+QPushButton:hover{
+background-color: rgba(0, 255, 123, 100);
+
+border-radius: 4px;
+}
+QPushButton:pressed{
+border-radius: 4px;
+background-color:green;
+}</string>
         </property>
         <property name="text">
          <string>Сообщество</string>
@@ -225,12 +262,23 @@ margin-right:10px;
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">color:white;
-background:rgba(255,255,255,10);
+         <string notr="true">QPushButton{
+background:rgba(255,255,255,0);
+color:white;
 margin-bottom:12px;
 margin-left:10px;
 margin-right:10px;
-</string>
+padding:3px;
+}
+QPushButton:hover{
+background-color: rgba(0, 255, 123, 100);
+
+border-radius: 4px;
+}
+QPushButton:pressed{
+border-radius: 4px;
+background-color:green;
+}</string>
         </property>
         <property name="text">
          <string>Магазин</string>
@@ -268,13 +316,17 @@ margin-right:10px;
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">background:rgba(255,255,255,10);</string>
+         <string notr="true">QPushButton{background:rgba(255,255,255,0);}
+QPushButton:hover{background-color: rgba(0, 255, 123, 100);
+border-radius:4px;}
+QPushButton:pressed{background:green;
+border-radius:4px;}</string>
         </property>
         <property name="text">
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../../../src/res.qrc">
+         <iconset resource="src/res.qrc">
           <normaloff>:/ui/settings.png</normaloff>:/ui/settings.png</iconset>
         </property>
         <property name="iconSize">
@@ -297,13 +349,17 @@ margin-right:10px;
          </sizepolicy>
         </property>
         <property name="styleSheet">
-         <string notr="true">background:rgba(255,255,255,10);</string>
+         <string notr="true">QPushButton{background:rgba(255,255,255,0);}
+QPushButton:hover{background-color: rgba(0, 255, 123, 100);
+border-radius:4px;}
+QPushButton:pressed{background:green;
+border-radius:4px;}</string>
         </property>
         <property name="text">
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../../../src/res.qrc">
+         <iconset resource="src/res.qrc">
           <normaloff>:/ui/minus.png</normaloff>:/ui/minus.png</iconset>
         </property>
         <property name="flat">
@@ -319,14 +375,21 @@ margin-right:10px;
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
         <property name="styleSheet">
-         <string notr="true">background:rgba(255,255,255,10);</string>
+         <string notr="true">QPushButton{background:rgba(255,255,255,0);}
+QPushButton:hover{background-color: rgba(0, 255, 123, 100);
+border-radius:4px;}
+QPushButton:pressed{background:red; 
+border-radius:4px;}</string>
         </property>
         <property name="text">
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../../../src/res.qrc">
+         <iconset resource="src/res.qrc">
           <normaloff>:/ui/close.png</normaloff>:/ui/close.png</iconset>
         </property>
         <property name="flat">
@@ -605,7 +668,7 @@ background:rgba(255,255,255,0);</string>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">color:rgb(134, 134, 134);
+         <string notr="true">color:rgb(209, 209, 209);
 height:30px;
 width:220px;
 border-radius: 7px;
@@ -620,7 +683,7 @@ background:rgba(143, 143, 143,50);
          <string/>
         </property>
         <property name="maxLength">
-         <number>32767</number>
+         <number>30</number>
         </property>
         <property name="frame">
          <bool>false</bool>
@@ -634,28 +697,48 @@ background:rgba(143, 143, 143,50);
         <property name="placeholderText">
          <string>Введите ваше имя</string>
         </property>
+        <property name="clearButtonEnabled">
+         <bool>false</bool>
+        </property>
        </widget>
       </item>
       <item>
        <widget class="QPushButton" name="pushButton_play">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
         <property name="autoFillBackground">
          <bool>false</bool>
         </property>
         <property name="styleSheet">
-         <string notr="true">background:rgba(255,255,255,0);</string>
+         <string notr="true">QPushButton{
+background-image: url(:/ui/play.png);
+height:81px;
+width:268px;
+border-radius:7px;
+}
+QPushButton:hover{background-color:green;}
+QPushButton:pressed{
+width:268px;
+height:71px;
+background-image:url(:/ui/playpressed.png);
+border-radius:7px;
+}</string>
         </property>
         <property name="text">
          <string/>
         </property>
-        <property name="icon">
-         <iconset resource="../../../src/res.qrc">
-          <normaloff>:/ui/play.png</normaloff>:/ui/play.png</iconset>
-        </property>
         <property name="iconSize">
          <size>
-          <width>200</width>
-          <height>100</height>
+          <width>0</width>
+          <height>0</height>
          </size>
+        </property>
+        <property name="default">
+         <bool>false</bool>
         </property>
         <property name="flat">
          <bool>true</bool>
@@ -668,7 +751,7 @@ background:rgba(143, 143, 143,50);
   </widget>
  </widget>
  <resources>
-  <include location="../../../src/res.qrc"/>
+  <include location="src/res.qrc"/>
  </resources>
  <connections>
   <connection>

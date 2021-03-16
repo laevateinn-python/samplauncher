@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'MainWindow - untitledOYgBvT.ui'
+## Form generated from reading UI file 'mainwindowjsTQAF.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -33,8 +33,11 @@ class Ui_MainWindow(object):
         font.setWeight(50)
         MainWindow.setFont(font)
         MainWindow.setAutoFillBackground(False)
-        MainWindow.setStyleSheet(u"background-image: url(:/ui/back_colored.png);\n"
-"")
+        icon = QIcon()
+        icon.addFile(u":/ui/play.png", QSize(), QIcon.Normal, QIcon.Off)
+        MainWindow.setWindowIcon(icon)
+        MainWindow.setStyleSheet(u"background-image: url(:/ui/back_black.png);\n"
+"border-radius:30px;")
         MainWindow.setLocale(QLocale(QLocale.Russian, QLocale.Russia))
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
@@ -80,12 +83,23 @@ class Ui_MainWindow(object):
         font2.setWeight(50)
         self.pushButton_site.setFont(font2)
         self.pushButton_site.setFocusPolicy(Qt.StrongFocus)
-        self.pushButton_site.setStyleSheet(u"background:rgba(255,255,255,10);\n"
+        self.pushButton_site.setStyleSheet(u"QPushButton{\n"
+"background:rgba(255,255,255,0);\n"
 "color:white;\n"
 "margin-bottom:12px;\n"
 "margin-left:10px;\n"
 "margin-right:10px;\n"
-"")
+"padding:3px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgba(0, 255, 123, 100);\n"
+"\n"
+"border-radius: 4px;\n"
+"}\n"
+"QPushButton:pressed{\n"
+"border-radius: 4px;\n"
+"background-color:green;\n"
+"}")
         self.pushButton_site.setAutoDefault(False)
         self.pushButton_site.setFlat(True)
 
@@ -94,12 +108,23 @@ class Ui_MainWindow(object):
         self.pushButton_forum = QPushButton(self.centralwidget)
         self.pushButton_forum.setObjectName(u"pushButton_forum")
         self.pushButton_forum.setFont(font1)
-        self.pushButton_forum.setStyleSheet(u"background:rgba(255,255,255,10);\n"
+        self.pushButton_forum.setStyleSheet(u"QPushButton{\n"
+"background:rgba(255,255,255,0);\n"
 "color:white;\n"
 "margin-bottom:12px;\n"
 "margin-left:10px;\n"
 "margin-right:10px;\n"
-"")
+"padding:3px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgba(0, 255, 123, 100);\n"
+"\n"
+"border-radius: 4px;\n"
+"}\n"
+"QPushButton:pressed{\n"
+"border-radius: 4px;\n"
+"background-color:green;\n"
+"}")
         self.pushButton_forum.setFlat(True)
 
         self.horizontalLayout.addWidget(self.pushButton_forum)
@@ -107,12 +132,23 @@ class Ui_MainWindow(object):
         self.pushButton_commun = QPushButton(self.centralwidget)
         self.pushButton_commun.setObjectName(u"pushButton_commun")
         self.pushButton_commun.setFont(font1)
-        self.pushButton_commun.setStyleSheet(u"color:white;\n"
-"background:rgba(255,255,255,10);\n"
+        self.pushButton_commun.setStyleSheet(u"QPushButton{\n"
+"background:rgba(255,255,255,0);\n"
+"color:white;\n"
 "margin-bottom:12px;\n"
 "margin-left:10px;\n"
 "margin-right:10px;\n"
-"")
+"padding:3px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgba(0, 255, 123, 100);\n"
+"\n"
+"border-radius: 4px;\n"
+"}\n"
+"QPushButton:pressed{\n"
+"border-radius: 4px;\n"
+"background-color:green;\n"
+"}")
         self.pushButton_commun.setFlat(True)
 
         self.horizontalLayout.addWidget(self.pushButton_commun)
@@ -120,12 +156,23 @@ class Ui_MainWindow(object):
         self.pushButton_shop = QPushButton(self.centralwidget)
         self.pushButton_shop.setObjectName(u"pushButton_shop")
         self.pushButton_shop.setFont(font1)
-        self.pushButton_shop.setStyleSheet(u"color:white;\n"
-"background:rgba(255,255,255,10);\n"
+        self.pushButton_shop.setStyleSheet(u"QPushButton{\n"
+"background:rgba(255,255,255,0);\n"
+"color:white;\n"
 "margin-bottom:12px;\n"
 "margin-left:10px;\n"
 "margin-right:10px;\n"
-"")
+"padding:3px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"background-color: rgba(0, 255, 123, 100);\n"
+"\n"
+"border-radius: 4px;\n"
+"}\n"
+"QPushButton:pressed{\n"
+"border-radius: 4px;\n"
+"background-color:green;\n"
+"}")
         self.pushButton_shop.setFlat(True)
 
         self.horizontalLayout.addWidget(self.pushButton_shop)
@@ -145,7 +192,11 @@ class Ui_MainWindow(object):
         font3.setFamily(u"Montserrat Medium")
         font3.setPointSize(10)
         self.pushButton_set.setFont(font3)
-        self.pushButton_set.setStyleSheet(u"background:rgba(255,255,255,10);")
+        self.pushButton_set.setStyleSheet(u"QPushButton{background:rgba(255,255,255,0);}\n"
+"QPushButton:hover{background-color: rgba(0, 255, 123, 100);\n"
+"border-radius:4px;}\n"
+"QPushButton:pressed{background:green;\n"
+"border-radius:4px;}")
         icon = QIcon()
         icon.addFile(u":/ui/settings.png", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_set.setIcon(icon)
@@ -158,7 +209,11 @@ class Ui_MainWindow(object):
         self.pushButton_minim.setObjectName(u"pushButton_minim")
         sizePolicy1.setHeightForWidth(self.pushButton_minim.sizePolicy().hasHeightForWidth())
         self.pushButton_minim.setSizePolicy(sizePolicy1)
-        self.pushButton_minim.setStyleSheet(u"background:rgba(255,255,255,10);")
+        self.pushButton_minim.setStyleSheet(u"QPushButton{background:rgba(255,255,255,0);}\n"
+"QPushButton:hover{background-color: rgba(0, 255, 123, 100);\n"
+"border-radius:4px;}\n"
+"QPushButton:pressed{background:green;\n"
+"border-radius:4px;}")
         icon1 = QIcon()
         icon1.addFile(u":/ui/minus.png", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_minim.setIcon(icon1)
@@ -170,7 +225,12 @@ class Ui_MainWindow(object):
         self.pushButton_close.setObjectName(u"pushButton_close")
         sizePolicy1.setHeightForWidth(self.pushButton_close.sizePolicy().hasHeightForWidth())
         self.pushButton_close.setSizePolicy(sizePolicy1)
-        self.pushButton_close.setStyleSheet(u"background:rgba(255,255,255,10);")
+        self.pushButton_close.setAutoFillBackground(False)
+        self.pushButton_close.setStyleSheet(u"QPushButton{background:rgba(255,255,255,0);}\n"
+"QPushButton:hover{background-color: rgba(0, 255, 123, 100);\n"
+"border-radius:4px;}\n"
+"QPushButton:pressed{background:red; \n"
+"border-radius:4px;}")
         icon2 = QIcon()
         icon2.addFile(u":/ui/close.png", QSize(), QIcon.Normal, QIcon.Off)
         self.pushButton_close.setIcon(icon2)
@@ -207,6 +267,8 @@ class Ui_MainWindow(object):
         self.line.setObjectName(u"line")
         self.line.setFrameShape(QFrame.VLine)
         self.line.setFrameShadow(QFrame.Sunken)
+        self.line.setStyleSheet(u"color:white;\n"
+"background:rgba(255,255,255,200);")
 
         self.horizontalLayout_3.addWidget(self.line)
 
@@ -267,6 +329,8 @@ class Ui_MainWindow(object):
         self.line_2.setObjectName(u"line_2")
         self.line_2.setFrameShape(QFrame.VLine)
         self.line_2.setFrameShadow(QFrame.Sunken)
+        self.line_2.setStyleSheet(u"color:white;\n"
+"background:rgba(255,255,255,200);")
 
         self.horizontalLayout_4.addWidget(self.line_2)
 
@@ -339,28 +403,40 @@ class Ui_MainWindow(object):
         self.lineEdit.setSizePolicy(sizePolicy2)
         self.lineEdit.setBaseSize(QSize(0, 0))
         self.lineEdit.setFont(font6)
-        self.lineEdit.setStyleSheet(u"color:rgb(134, 134, 134);\n"
+        self.lineEdit.setStyleSheet(u"color:rgb(209, 209, 209);\n"
 "height:30px;\n"
 "width:220px;\n"
 "border-radius: 7px;\n"
 "text-align:center;\n"
 "background:rgba(143, 143, 143,50);\n"
 "")
-        self.lineEdit.setMaxLength(32767)
+        self.lineEdit.setMaxLength(30)
         self.lineEdit.setFrame(False)
         self.lineEdit.setCursorPosition(0)
         self.lineEdit.setAlignment(Qt.AlignCenter)
+        self.lineEdit.setClearButtonEnabled(False)
 
         self.horizontalLayout_5.addWidget(self.lineEdit)
 
         self.pushButton_play = QPushButton(self.centralwidget)
         self.pushButton_play.setObjectName(u"pushButton_play")
+        sizePolicy.setHeightForWidth(self.pushButton_play.sizePolicy().hasHeightForWidth())
+        self.pushButton_play.setSizePolicy(sizePolicy)
         self.pushButton_play.setAutoFillBackground(False)
-        self.pushButton_play.setStyleSheet(u"background:rgba(255,255,255,0);")
-        icon3 = QIcon()
-        icon3.addFile(u":/ui/play.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.pushButton_play.setIcon(icon3)
-        self.pushButton_play.setIconSize(QSize(200, 100))
+        self.pushButton_play.setStyleSheet(u"QPushButton{\n"
+"background-image: url(:/ui/play.png);\n"
+"height:81px;\n"
+"width:268px;\n"
+"border-radius:7px;\n"
+"}\n"
+"QPushButton:hover{background-color:green;}\n"
+"QPushButton:pressed{\n"
+"width:268px;\n"
+"height:71px;\n"
+"background-image:url(:/ui/playpressed.png);\n"
+"border-radius:7px;\n"
+"}")
+        self.pushButton_play.setIconSize(QSize(0, 0))
         self.pushButton_play.setFlat(True)
 
         self.horizontalLayout_5.addWidget(self.pushButton_play)
@@ -375,13 +451,17 @@ class Ui_MainWindow(object):
         self.pushButton_minim.clicked.connect(MainWindow.showMinimized)
 
         self.pushButton_site.setDefault(False)
+        self.pushButton_play.setDefault(False)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
 
+    def hide(self):
+        self.hide
+
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Suvorovka launcher ", None))
         self.logo.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><img height=42 width=210 src=\":/ui/logo.png\"/></p></body></html>", None))
         self.pushButton_site.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0430\u0439\u0442", None))
         self.pushButton_forum.setText(QCoreApplication.translate("MainWindow", u"\u0424\u043e\u0440\u0443\u043c", None))
@@ -400,4 +480,3 @@ class Ui_MainWindow(object):
         self.lineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0432\u0430\u0448\u0435 \u0438\u043c\u044f", None))
         self.pushButton_play.setText("")
     # retranslateUi
-

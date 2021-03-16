@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>978</width>
+    <height>496</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Settings</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+background-image: url(:/ui/back_settings.png);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>11</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>11</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>Montserrat Medium</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background:rgba(0,0,0,0);
+height:42px;
+width:210px;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img height=42 width=210 src=&quot;:/ui/logo.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignHCenter|Qt::AlignTop</set>
+        </property>
+        <property name="margin">
+         <number>5</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>Montserrat Medium</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background:rgba(255,255,255,0);
+color:white;
+margin-left:10px;
+margin-right:10px;
+padding:3px;
+text-align: center;
+}
+QPushButton:hover{
+background-color: rgba(0, 255, 123, 100);
+border-radius: 4px;
+}
+QPushButton:pressed{
+border-radius: 4px;
+background-color:green;
+}</string>
+        </property>
+        <property name="text">
+         <string>Вернуться назад</string>
+        </property>
+        <property name="icon">
+         <iconset resource="src/res.qrc">
+          <normaloff>:/ui/arrow.png</normaloff>:/ui/arrow.png</iconset>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background:rgba(255,255,255,0);
+color:white;
+padding:3px;
+}
+QPushButton:hover{
+background-color: rgba(0, 255, 123, 100);
+border-radius: 4px;
+}
+QPushButton:pressed{
+border-radius: 4px;
+background-color:red;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="src/res.qrc">
+          <normaloff>:/ui/close.png</normaloff>:/ui/close.png</iconset>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="horizontalSpacing">
+       <number>0</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>10</number>
+      </property>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="font">
+         <font>
+          <family>Montserrat Light</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+background:rgba(249, 249, 249, 200);
+color: rgba(0,0,0,200);
+border-radius:10px;
+border-right:0px;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+        <property name="placeholderText">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <family>Montserrat Medium</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+background: rgb(0, 85, 0);
+color:white;
+border-style:insect;
+border-radius:5px;
+padding:3px;
+}
+QPushButton:hover{
+background-color:rgba(0, 148, 109, 200);
+border-radius: 5px;
+}
+QPushlButton:pressed{
+border-radius: 5px;
+background:rgba(0, 170, 0,255);
+}</string>
+          </property>
+          <property name="text">
+           <string>Проверить клиент</string>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="1">
+       <widget class="QToolButton" name="toolButton">
+        <property name="font">
+         <font>
+          <family>Montserrat Medium</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton{
+background:rgba(255,255,255,0);
+color:white;
+text-align: center;
+}
+QToolButton:hover{
+background-color:rgba(0, 85, 0, 200);
+border-radius: 4px;
+}
+QToolButton:pressed{
+border-radius: 4px;
+background-color:green;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="src/res.qrc">
+          <normaloff>:/ui/folder.png</normaloff>:/ui/folder.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="popupMode">
+         <enum>QToolButton::DelayedPopup</enum>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonIconOnly</enum>
+        </property>
+        <property name="autoRaise">
+         <bool>false</bool>
+        </property>
+        <property name="arrowType">
+         <enum>Qt::NoArrow</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <family>Montserrat Medium</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:rgb(131, 131, 131);
+background:rgba(0,0,0,0);</string>
+        </property>
+        <property name="text">
+         <string>Путь к клиенту...</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="3" column="0">
+       <widget class="QCheckBox" name="checkBox">
+        <property name="font">
+         <font>
+          <family>Montserrat Medium</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background: rgba(0,0,0,0);
+color:rgb(88, 88, 88)</string>
+        </property>
+        <property name="text">
+         <string>Запускать при загрузке системы</string>
+        </property>
+        <property name="tristate">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="font">
+       <font>
+        <family>Montserrat Medium</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgba(0,0,0,0);
+color:rgb(125, 125, 125)</string>
+      </property>
+      <property name="text">
+       <string>Suvorovka launcher - ver: 1.0.0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="src/res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>951</x>
+     <y>26</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>488</x>
+     <y>247</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
