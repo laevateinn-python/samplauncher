@@ -30,7 +30,7 @@ class Ui_Dialog(object):
         font.setFamily(u"Montserrat Medium")
         font.setPointSize(14)
         Dialog.setFont(font)
-        Dialog.setStyleSheet(u"background-image: url(:/ui/back_dialog.png);")
+        Dialog.setStyleSheet(u"background-image: url(:/ui/back_dialog.png); border-radius:30px;")
         self.verticalLayout = QVBoxLayout(Dialog)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.horizontalLayout = QHBoxLayout()
@@ -98,6 +98,7 @@ class Ui_Dialog(object):
 
 
         self.retranslateUi(Dialog)
+        self.pushButton_closedialog.clicked.connect(Dialog.close)
 
         QMetaObject.connectSlotsByName(Dialog)
     # setupUi
@@ -108,4 +109,3 @@ class Ui_Dialog(object):
         self.pushButton_closedialog.setText("")
         self.label_2.setText(QCoreApplication.translate("Dialog", u"*\u0414\u043b\u044f \u0442\u043e\u0433\u043e, \u0447\u0442\u043e\u0431\u044b \u0432\u0432\u043e\u0439\u0442\u0438 \u0432 \u0438\u0433\u0440\u0443, \u0432\u0430\u043c \u043d\u0430\u0434\u043e \u043d\u0430\u0436\u0430\u0442\u044c \u043d\u0430 \u043a\u043d\u043e\u043f\u043a\u0443 \"\u0412\u043e\u0439\u0442\u0438\".", None))
     # retranslateUi
-

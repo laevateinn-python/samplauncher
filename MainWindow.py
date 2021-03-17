@@ -276,6 +276,7 @@ class Ui_MainWindow(object):
         self.listView_servers.setObjectName(u"listView_servers")
         self.listView_servers.setStyleSheet(u"background:rgba(255,255,255,0);")
         self.listView_servers.setFrameShape(QFrame.NoFrame)
+        
 
         self.horizontalLayout_3.addWidget(self.listView_servers)
 
@@ -456,9 +457,6 @@ class Ui_MainWindow(object):
 
         QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
-
-    def hide(self):
-        self.hide
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Suvorovka launcher ", None))
