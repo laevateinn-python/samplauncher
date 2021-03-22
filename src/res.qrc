@@ -1,5 +1,7 @@
 <RCC>
   <qresource prefix="ui">
+    <file>green_led.png</file>
+    <file>red_led.png</file>
     <file>folder.png</file>
     <file>arrow.png</file>
     <file>back_settings.png</file>

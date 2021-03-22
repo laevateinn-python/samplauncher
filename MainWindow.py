@@ -269,16 +269,11 @@ class Ui_MainWindow(object):
         self.line.setFrameShadow(QFrame.Sunken)
         self.line.setStyleSheet(u"color:white;\n"
 "background:rgba(255,255,255,200);")
-
+        
         self.horizontalLayout_3.addWidget(self.line)
 
-        self.listView_servers = QListView(self.centralwidget)
-        self.listView_servers.setObjectName(u"listView_servers")
-        self.listView_servers.setStyleSheet(u"background:rgba(255,255,255,0);")
-        self.listView_servers.setFrameShape(QFrame.NoFrame)
-        
 
-        self.horizontalLayout_3.addWidget(self.listView_servers)
+
 
 
         self.verticalLayout_serv.addLayout(self.horizontalLayout_3)
@@ -371,11 +366,11 @@ class Ui_MainWindow(object):
         self.progressBar.setObjectName(u"progressBar")
         self.progressBar.setFont(font6)
         self.progressBar.setAutoFillBackground(False)
-        self.progressBar.setStyleSheet(u"border-radius: 10px;\n"
-"text-align:left;\n"
+        self.progressBar.setStyleSheet(u"QProgressBar{border-radius: 10px;\n"
+"text-align:center;\n"
 "background:rgba(143, 143, 143,50);\n"
-"color:white;")
-        self.progressBar.setValue(29)
+"color:white;} QProgressBar::chunk{background:rgba(0,185 ,0 ,255);margin: 0.5px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 10px; border-top-left-radius: 10px}")
+        self.progressBar.setValue(0)
         self.progressBar.setAlignment(Qt.AlignHCenter|Qt.AlignTop)
         self.progressBar.setTextVisible(True)
         self.progressBar.setOrientation(Qt.Horizontal)
@@ -471,8 +466,8 @@ class Ui_MainWindow(object):
         self.label.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0448\u0438 \u0441\u0435\u0440\u0432\u0435\u0440\u0430", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0431\u0449\u0438\u0439 \u043e\u043d\u043b\u0430\u0439\u043d: 10", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u0432\u043e\u0441\u0442\u0438 \u041f\u0440\u043e\u0435\u043a\u0442\u0430", None))
-        self.label_load2.setText(QCoreApplication.translate("MainWindow", u"\u0418\u0434\u0438\u043e\u0442 \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0430...", None))
-        self.label_load.setText(QCoreApplication.translate("MainWindow", u"C:\\userotsosi", None))
+        self.label_load2.setText(QCoreApplication.translate("MainWindow", u"", None))
+        self.label_load.setText(QCoreApplication.translate("MainWindow", u"", None))
         self.lineEdit.setInputMask("")
         self.lineEdit.setText("")
         self.lineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0432\u0430\u0448\u0435 \u0438\u043c\u044f", None))

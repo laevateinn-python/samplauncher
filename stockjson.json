@@ -1,0 +1,15 @@
+{
+    "verLauncher": "1.0.0",
+    "downClientLink": "https://google.com",
+    "downLauncherLink": "https://microsoft.com",
+    "servers": [
+        "127.0.0.1:7777",
+        "localhost:7878"
+    ],
+    "webLinks": {
+        "shopLink":"http://shop.suvorovka-rp.ru",
+        "forumLink":"http://forum.suvorovka-rp.ru",
+        "siteLink":"http://suvorovka-rp.ru",
+        "communityLink":"http://vk.com/suvorovka.crmp"
+    }
+}

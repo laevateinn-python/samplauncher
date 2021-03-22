@@ -17,7 +17,7 @@ import res_rc
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         if not Dialog.objectName():
-            Dialog.setObjectName(u"Dialog")
+            Dialog.setObjectName(u"MainWindow3")
         Dialog.resize(499, 298)
         sizePolicy = QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -26,11 +26,12 @@ class Ui_Dialog(object):
         Dialog.setSizePolicy(sizePolicy)
         Dialog.setMinimumSize(QSize(499, 298))
         Dialog.setMaximumSize(QSize(499, 298))
+        
         font = QFont()
         font.setFamily(u"Montserrat Medium")
-        font.setPointSize(14)
+        font.setPointSize(20)
         Dialog.setFont(font)
-        Dialog.setStyleSheet(u"background-image: url(:/ui/back_dialog.png); border-radius:30px;")
+        Dialog.setStyleSheet(u"QWidget{background-image:url(:/ui/back_dialog.png); border-radius:30px}")
         self.verticalLayout = QVBoxLayout(Dialog)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.horizontalLayout = QHBoxLayout()
